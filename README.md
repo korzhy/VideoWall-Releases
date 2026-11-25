@@ -1,5 +1,4 @@
-<p align="center"><img src="images/cliptrellis.png" width="72" height="72" alt=""></p>
-<h1 align="center">ClipTrellis</h1>
+<h1 align="center"><img src="images/cliptrellis.png" width="44" height="44" align="middle" alt=""> ClipTrellis</h1>
 <p align="center">
   Browse, preview, and shortlist video clips for your next edit.<br>
   Просматривайте видео из папки, ставьте оценки и отбирайте клипы для монтажа.
