@@ -1,51 +1,38 @@
-<h1 align="center"><img src="images/cliptrellis.png" width="44" height="44" align="middle" alt=""> ClipTrellis</h1>
-<p align="center">
-  Browse, preview, and shortlist video clips for your next edit.<br>
-  Просматривайте видео из папки, ставьте оценки и отбирайте клипы для монтажа.
-</p>
-<p align="center">
-  <strong><a href="https://github.com/korzhy/VideoWall-Releases/releases/latest/download/VideoWall-Setup-x64-with-dotnet.exe">Download for Windows / Скачать для Windows</a></strong><br>
-  64-bit / 64 бита · .NET included / .NET включён
-</p>
-<p align="center">
-  <a href="#get-started">English</a> · <a href="README.ru.md">Русский</a> · <a href="https://github.com/korzhy/VideoWall-Releases/releases/latest">What's new / Что нового</a>
-</p>
+<h1><img src="images/cliptrellis.png" width="40" height="40" align="middle" alt=""> ClipTrellis</h1>
 
-![ClipTrellis showing the fishKits video collection as a thumbnail grid with yellow and blue groups and star ratings](images/grid-en.jpg)
+**Review and shortlist footage before you edit.** Open a folder of videos on Windows, preview takes alongside the thumbnail grid, and drag the clips you choose into your editor.
 
-## Get started
+**Отбор видео перед монтажом в Windows.** Просматривайте исходники из папок, отмечайте удачные дубли и перетаскивайте их в редактор.
 
-1. **Install.** Download the recommended installer above and run the `.exe`. It includes everything ClipTrellis needs to start.
-2. **Open a folder.** Click **Open folder** or press <kbd>Ctrl</kbd>+<kbd>O</kbd> and choose a folder with videos. Double-click a thumbnail to see the clip alongside the grid.
-3. **Make your shortlist.** Right-click a clip to add a color label or rating, or select clips and press <kbd>N</kbd> to number them. Drag a tile or the video in the preview into your editor when you're ready to use it.
+**[Download for Windows / Скачать для Windows](https://github.com/korzhy/VideoWall-Releases/releases/latest/download/VideoWall-Setup-x64-with-dotnet.exe)** · x64, .NET included / .NET включён
 
-<details>
-<summary>See the grid and preview side by side</summary>
+[Полная страница на русском](README.ru.md) · [User guide](docs/guide.md) · [What's new](https://github.com/korzhy/VideoWall-Releases/releases/latest)
 
-![The fishKits grid on the left and a vertical video playing on the right](images/preview-en.jpg)
+![ClipTrellis with fishKits and B-roll open in two tabs, color groups and ratings in the grid, and a clip paused in the preview](images/workflow-en.jpg)
 
-</details>
+*A shortlist from fishKits. Color borders separate groups, stars show ratings, and the numbers give a viewing order. The current clip is paused on the right, with B-roll open in a second tab.*
 
-### A few useful controls
+## Build a shortlist, then bring it into your edit
 
-| What you want to do | How to do it |
+1. **Review the takes.** Press **Ctrl+O** to open a folder. Double-click a tile by default to open the preview alongside the grid. Press **Space** to play or pause and **PgUp / PgDn** to step through clips.
+2. **Mark the clips you want.** In fishKits, you could give the aquarium shots one color and the close-ups another. Use **Alt+1–5** for color, **Ctrl+1–5** for rating and **N** to number your selection. Sort by rating or number to bring your shortlist to the front.
+3. **Find a cutaway in another folder.** Press **Ctrl+T** to open B-roll in a separate tab. Switch back with **Ctrl+Tab** to pick up your search, selection and scroll position. The preview returns paused where you left it. Tabs last for the current session.
+4. **Send the chosen file to your editor.** Drag a tile or the video in the preview into your editor's media area, for example in Clipchamp. After adding it, click **✓** on the tile to set it aside in **Used**. If you enable automatic filing in Settings, an accepted drop can do that for you. The next clip opens paused when ClipTrellis advances automatically.
+
+## What happens to your files
+
+| Action | Result |
 | --- | --- |
-| Keep several folders open | <kbd>Ctrl</kbd>+<kbd>T</kbd> opens a folder in a new tab. Each tab keeps its own selection, search, and preview position while you switch. |
-| Find a clip | <kbd>Ctrl</kbd>+<kbd>F</kbd> searches by file name. |
-| Review a sequence | <kbd>Space</kbd> plays or pauses the preview. <kbd>PgUp</kbd> and <kbd>PgDn</kbd> step through clips. |
-| Put a clip aside | Click **✓** on a tile to file it under **Used**, or press <kbd>Delete</kbd> in the main grid to move it to ClipTrellis **Trash**. Both actions hide the clip from the grid and leave the file in its folder. Open either section to restore a clip. |
+| Drag a clip **out** of ClipTrellis | The receiving app gets the original file path. The original stays in its folder. |
+| Drag a video **in** from Explorer | ClipTrellis copies it into the open folder. A colliding name gets a numbered suffix. When you add videos directly to the folder in Explorer, the grid and count update automatically. |
+| Send a clip to **Used** or **Trash** | ClipTrellis hides it from the main grid. You can restore it from that section. |
+| Choose **Move color group to a new folder** | ClipTrellis moves the group on disk and opens the new subfolder. Labels, ratings and numbers move with the clips. |
 
-In **Trash** or **Used**, read the confirmation if you press <kbd>Delete</kbd>. In these views, it can delete the file from disk.
+Permanent deletion is a separate, confirmed action inside **Trash** or **Used**. [File handling and recovery](docs/guide.md#file-handling)
 
-## Installation and updates
+## Install and get help
 
-- **Windows 10 (version 21H2 or later) or Windows 11, x64.** Choose the download at the top for a first installation. The installer file begins with `VideoWall-Setup` and installs ClipTrellis.
-- **Already have Microsoft .NET 10 Desktop Runtime x64?** Use the [smaller installer](https://github.com/korzhy/VideoWall-Releases/releases/latest/download/VideoWall-Setup-x64-without-dotnet.exe).
-- **Updating?** Open **Settings → Check for updates**. For a manual update, use the same installer variant you originally installed. [All releases](https://github.com/korzhy/VideoWall-Releases/releases)
-- **Changing the interface language?** Open **Settings → Interface language**, select **English** or **Русский**, and reopen ClipTrellis.
-
-## Help
-
-Press <kbd>F1</kbd> in ClipTrellis for the full shortcut list. If you can see a file in the grid but can't play it, try another MP4 first. Playback depends on the video format and the codecs available in Windows.
-
-For a question or a bug, include your ClipTrellis version and what you were doing. If playback is involved, include the file extension. [Open an issue](https://github.com/korzhy/VideoWall-Releases/issues/new) · [Читать по-русски](README.ru.md)
+- **Windows 10 21H2 or later, or Windows 11, x64.** The download above includes the desktop runtime. The file name starts with `VideoWall-Setup` and installs ClipTrellis.
+- **Already have .NET 10 Desktop Runtime x64?** Choose the [smaller installer](https://github.com/korzhy/VideoWall-Releases/releases/latest/download/VideoWall-Setup-x64-without-dotnet.exe). Use the same installer variant for manual updates, or use **Settings → Check for updates**.
+- **Using ClipTrellis in Russian?** Choose **Русский** under **Settings → Interface language** and restart the app. [Русская инструкция](docs/guide.ru.md)
+- Open the [user guide](docs/guide.md) for shortcuts, preview settings, supported extensions and playback help. If you run into a problem, [open an issue](https://github.com/korzhy/VideoWall-Releases/issues/new) with the app version and steps to reproduce it.
